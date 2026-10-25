@@ -1,30 +1,40 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "cartelera",
-  "version": "1.0.0",
-  "description": "Cartelera is an AI video studio. Tell it your idea and it plans the script, the scene photos, the music and the edit, then shows the exact token cost and waits for your approval before animating anything.",
+  "version": "1.0.2",
+  "description": "Cartelera is an AI video studio. Tell it your idea and it plans the script, the scene photos, the music and the edit, then waits for your approval before animating anything.",
   "author": {
     "name": "Toro Technology",
     "email": "support@cartelera.party",
     "url": "https://cartelera.party"
   },
   "homepage": "https://cartelera.party",
-  "keywords": ["video", "ai video", "music video", "animate photo", "commercial", "ad", "song", "storyboard", "spanish"],
+  "keywords": [
+    "video",
+    "ai video",
+    "music video",
+    "animate photo",
+    "commercial",
+    "ad",
+    "song",
+    "storyboard",
+    "spanish"
+  ],
   "extensions": {
     "com.openai": {
       "interface": {
         "displayName": "Cartelera",
         "shortDescription": "AI videos from your idea",
-        "longDescription": "Cartelera turns an idea into a finished video: animate a photo or a painting, make a commercial for your business, a short series, a house tour or a music video with an original song.\n\nWhat you can do from ChatGPT:\n- Start a project from a short description (style, length, vertical or horizontal).\n- Follow the plan step by step: script, scene photos and music are prepared for free, and you can change any scene or pick a different photo.\n- Get an exact quote in tokens before anything is animated. Spending always needs your explicit approval with a one-time code, and it never goes above the daily limit you chose when you connected.\n- Download the finished MP4 when it is ready.\n\nWho it is for: families who want to bring old photos to life, small businesses that need short ads, and creators who want music videos and series in Spanish or English.\n\nLimitations: animating scenes uses tokens from your Cartelera account; long videos take a few minutes per scene; Cartelera does not make adult, violent or impersonation content.",
+        "longDescription": "Cartelera turns an idea into a finished video: animate a photo or a painting, make a commercial for your business, a short series, a house tour or a music video with an original song.\n\nWhat you can do from ChatGPT:\n- Start a project from a short description (style, length, vertical or horizontal).\n- Follow the plan step by step: Cartelera prepares the script, the scene photos and the music, and you can change any scene or pick a different photo.\n- Nothing is animated until you approve it: Cartelera asks first, with a one-time code, and never goes past the daily limit you chose when you connected.\n- Download the finished MP4 when it is ready.\n\nWho it is for: families who want to bring old photos to life, small businesses that need short ads, and creators who want music videos and series in Spanish or English.\n\nLimitations: animating scenes requires a Cartelera account; long videos take a few minutes per scene; Cartelera does not make adult, violent or impersonation content.",
         "developerName": "Toro Technology",
         "category": "Creativity",
         "capabilities": [
           "Create a video project from a short idea",
           "Animate a photo or a painting",
           "Write an original song and make its music video",
-          "Plan the script and the scene photos for free",
+          "Plan the script and the scene photos",
           "Change a scene or choose a different photo",
-          "Quote the exact cost before spending any tokens",
+          "Ask for your approval before animating",
           "Download the finished MP4"
         ],
         "websiteURL": "https://cartelera.party",
