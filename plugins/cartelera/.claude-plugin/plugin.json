@@ -1,0 +1,32 @@
+{
+  "name": "cartelera",
+  "description": "AI video studio: turn an idea into a finished video. Animate a photo or a painting, make a commercial for your business, a short series or story, a house tour, or a music video with an original song. AI video generation (MiniMax H3), scene photos, original songs and background music, and the final edit. Script, scene photos and music are planned for free; animating scenes shows the exact token cost and only runs after you approve. After adding, open the plugin's Connectors tab and sign in to Cartelera.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Toro Technology",
+    "email": "support@cartelera.party",
+    "url": "https://cartelera.party"
+  },
+  "homepage": "https://cartelera.party",
+  "icon": "./.claude-plugin/icon.png",
+  "documentationUrl": "https://cartelera.party/conecta-tu-ia",
+  "supportUrl": "https://cartelera.party/conecta-tu-ia",
+  "privacyPolicyUrl": "https://cartelera.party/privacidad",
+  "termsOfServiceUrl": "https://cartelera.party/terminos",
+  "repository": "https://github.com/martinezc2017-cyber/cartelera-plugin",
+  "license": "MIT",
+  "keywords": [
+    "ai-video-generator",
+    "video-generation",
+    "image-to-video",
+    "animate-photo",
+    "music-video",
+    "song-generation",
+    "video-ads",
+    "commercials",
+    "storyboard",
+    "short-form-video",
+    "spanish",
+    "cartelera"
+  ]
+}

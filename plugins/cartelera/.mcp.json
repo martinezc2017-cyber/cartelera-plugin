@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "cartelera": {
+      "type": "http",
+      "url": "https://cartelera.party/mcp"
+    }
+  }
+}

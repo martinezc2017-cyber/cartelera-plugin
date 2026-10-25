@@ -1,0 +1,17 @@
+{
+  "name": "cartelera-marketplace",
+  "owner": {
+    "name": "Toro Technology",
+    "email": "support@cartelera.party"
+  },
+  "metadata": {
+    "description": "Cartelera AI video studio plugins for Cursor"
+  },
+  "plugins": [
+    {
+      "name": "cartelera",
+      "source": "plugins/cartelera",
+      "description": "AI video studio: animate photos, make ads, series and music videos with original songs."
+    }
+  ]
+}

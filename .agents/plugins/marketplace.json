@@ -1,0 +1,24 @@
+{
+  "name": "cartelera-marketplace",
+  "description": "Cartelera AI video studio plugins for Codex — animate photos, make ads, series and music videos with original songs.",
+  "version": "1.0.0",
+  "owner": {
+    "name": "Toro Technology"
+  },
+  "plugins": [
+    {
+      "name": "cartelera",
+      "source": "./plugins/cartelera",
+      "description": "AI video studio — animate photos, make ads, series and music videos with original songs. Plans for free and only spends tokens after you approve the quote.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Toro Technology"
+      },
+      "repository": "https://github.com/martinezc2017-cyber/cartelera-plugin",
+      "homepage": "https://cartelera.party",
+      "license": "MIT",
+      "keywords": ["video-generation", "image-to-video", "music-video", "video-ads", "storyboard", "creative", "mcp"],
+      "category": "creative"
+    }
+  ]
+}

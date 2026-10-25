@@ -1,0 +1,30 @@
+{
+  "name": "cartelera",
+  "version": "1.0.0",
+  "description": "AI video studio — animate photos, make ads, series and music videos with original songs. Plans for free and only spends tokens after you approve the quote.",
+  "author": {
+    "name": "Toro Technology"
+  },
+  "homepage": "https://cartelera.party",
+  "repository": "https://github.com/martinezc2017-cyber/cartelera-plugin",
+  "license": "MIT",
+  "keywords": ["video-generation", "image-to-video", "music-video", "video-ads", "storyboard", "creative", "mcp"],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Cartelera",
+    "shortDescription": "AI videos from your idea",
+    "longDescription": "Turn an idea into a finished video with Cartelera's hosted studio: animate a photo or a painting, make a commercial, a short series, a house tour or a music video with an original song. The script, scene photos and music are planned for free; animating scenes shows the exact token cost and only runs after you approve.",
+    "developerName": "Toro Technology",
+    "category": "Creativity",
+    "capabilities": ["Interactive", "Write"],
+    "websiteURL": "https://cartelera.party",
+    "privacyPolicyURL": "https://cartelera.party/privacidad",
+    "termsOfServiceURL": "https://cartelera.party/terminos",
+    "defaultPrompt": [
+      "Animate my grandparents' wedding photo into a short video with a love song",
+      "Make a 30-second vertical ad for my taco shop",
+      "Create a music video for a corrido about my hometown"
+    ]
+  }
+}

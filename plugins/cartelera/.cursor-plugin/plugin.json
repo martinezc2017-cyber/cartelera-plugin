@@ -1,0 +1,17 @@
+{
+  "name": "cartelera",
+  "displayName": "Cartelera",
+  "version": "1.0.0",
+  "description": "AI video studio: animate photos, make ads, series and music videos with original songs.",
+  "author": {
+    "name": "Toro Technology",
+    "email": "support@cartelera.party"
+  },
+  "homepage": "https://cartelera.party",
+  "repository": "https://github.com/martinezc2017-cyber/cartelera-plugin",
+  "license": "MIT",
+  "keywords": ["cartelera", "video-generation", "image-to-video", "music-video", "video-ads", "mcp"],
+  "category": "productivity",
+  "tags": ["creative-media", "video", "music", "mcp"],
+  "mcpServers": "./mcp.json"
+}
