@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "cartelera",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Cartelera is an AI video studio. Tell it your idea and it plans the script, the scene photos, the music and the edit, then waits for your approval before animating anything.",
   "author": {
     "name": "Toro Technology",
@@ -25,7 +25,7 @@
       "interface": {
         "displayName": "Cartelera",
         "shortDescription": "AI videos from your idea",
-        "longDescription": "Cartelera turns an idea into a finished video: animate a photo or a painting, make a commercial for your business, a short series, a house tour or a music video with an original song.\n\nWhat you can do from ChatGPT:\n- Start a project from a short description (style, length, vertical or horizontal).\n- Follow the plan step by step: Cartelera prepares the script, the scene photos and the music, and you can change any scene or pick a different photo.\n- Nothing is animated until you approve it: Cartelera asks first, with a one-time code, and never goes past the daily limit you chose when you connected.\n- Download the finished MP4 when it is ready.\n\nWho it is for: families who want to bring old photos to life, small businesses that need short ads, and creators who want music videos and series in Spanish or English.\n\nLimitations: animating scenes requires a Cartelera account; long videos take a few minutes per scene; Cartelera does not make adult, violent or impersonation content.",
+        "longDescription": "Cartelera turns an idea into a finished video: animate a photo or a painting, make a commercial for your business, a short series, a house tour or a music video with an original song.\n\nWhat you can do from ChatGPT:\n- Start a project from a short description (style, length, vertical or horizontal).\n- Follow the plan step by step: Cartelera prepares the script, the scene photos and the music, and you can change any scene or pick a different photo.\n- Nothing is animated until you approve it: Cartelera asks first, with a one-time code, and never goes past the daily limit you chose when you connected.\n- Review the ORIGINAL photos for every scene directly in the private in-chat Cartelera gallery, not regenerated images.\n- Play existing music and finished videos from ChatGPT; renew links when they expire.\n- Download the finished MP4 when it is ready.\n\nWho it is for: families who want to bring old photos to life, small businesses that need short ads, and creators who want music videos and series in Spanish or English.\n\nLimitations: animating scenes requires a Cartelera account; long videos take a few minutes per scene; Cartelera does not make adult, violent or impersonation content.",
         "developerName": "Toro Technology",
         "category": "Creativity",
         "capabilities": [
@@ -35,7 +35,9 @@
           "Plan the script and the scene photos",
           "Change a scene or choose a different photo",
           "Ask for your approval before animating",
-          "Download the finished MP4"
+          "Download the finished MP4",
+          "See original scene photos in an in-chat gallery",
+          "Listen to existing soundtrack and play delivered videos inside ChatGPT"
         ],
         "websiteURL": "https://cartelera.party",
         "supportURL": "https://cartelera.party/conecta-tu-ia",
@@ -84,6 +86,18 @@
               "prompt": "How much would it cost to animate my latest project?",
               "tools_triggered": "cotizar",
               "expected_behavior": "ChatGPT shows the exact cost in tokens and the user's balance, and says that nothing is spent until the user approves."
+            },
+            {
+              "description": "Show original scene photos in ChatGPT",
+              "prompt": "In Cartelera, show original photos for all scenes of my latest project, without generating new images",
+              "tools_triggered": "listar_proyectos, ver_escenas",
+              "expected_behavior": "Show original scene photos in the integrated gallery. No images invented or regenerated; read only."
+            },
+            {
+              "description": "Listen to music from a project in ChatGPT",
+              "prompt": "Play the existing soundtrack from my latest Cartelera project and renew the links if they expire",
+              "tools_triggered": "listar_proyectos, escuchar_musica",
+              "expected_behavior": "Show the project's music player and renewable download links without generating media or spending tokens."
             }
           ],
           "negative": [
